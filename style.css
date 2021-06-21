@@ -1,5 +1,6 @@
 body{
-    background-color: coral;
+    background-color: #A2DBFA;
+    font-size: 20px;
 }
 
 .wrapper{
@@ -11,13 +12,21 @@ body{
 }
 
 .container{
-    width: 450px;
-
+    width: 350px;
+    border: solid 2px black;
+    border-radius: 30px;
+    height: 550px;
+    display: block;
+    background-color: white;
 }
 
-/* .row{
-    margin-top: 5px;
-} */
+.first-row{
+    margin-top: 4vh;
+}
+
+.second-row{
+    margin-top: 2vh;
+}
 
 .row .col{
     /* margin: 5px; */
@@ -30,10 +39,25 @@ input{
     height: 70px;
     width: 70px;
     border: none;
+    color: black;
+    /* border: 1px solid #053742; */
     margin: 3px 3px;
-    border-radius: 20px;
+    border-radius: 15px;
+    background-color: #EFEFEF;
 }
 
 #equal{
     width: 148px;
+}
+
+#screen{
+    width: 296px;
+    /* background-color: #EFEFEF; */
+    padding: 0 20px;
+    font-size: 25px;
+}
+
+#equal{
+    background-color: rgb(93, 252, 93);
+    color: white;
 }
