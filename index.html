@@ -16,46 +16,46 @@
         <div class="container">
             <div class="row first-row">
                 <div class="col">
-                    <input id="screen" type="text" readonly="true" >
+                    <input id="screen" type="text" name="screen" readonly="true" >
                 </div>
             </div>
             <div class="row second-row">
                 <div class="col">
-                    <input type="button" id="sqrt" value="√">
-                    <input type="button" id="percentage" value="%">
-                    <input type="button" id="divide" value="/">
-                    <input id="clear" type="button" value="C">
+                    <input type="button" onclick="screen.value = eval(screen.value**2)" id="sqrt" value="^2">
+                    <input type="button" onclick="screen.value = eval(screen.value*0.1)" id="percentage" value="%">
+                    <input type="button" onclick="liveScreen('/')" id="divide" value="/">
+                    <input id="clear" onclick="clearScreen()" type="button" value="C">
                 </div>
                 </div>
             <div class="row">
                 <div class="col">
-                    <input type="button" id="seven" value="7">
-                    <input type="button" id="eight" value="8">
-                    <input type="button" id="nine" value="9">
-                    <input type="button" id="multiply" value="×">
+                    <input type="button" onclick="liveScreen(7)" id="seven" value="7">
+                    <input type="button" onclick="liveScreen(8)" id="eight" value="8">
+                    <input type="button" onclick="liveScreen(9)" id="nine" value="9">
+                    <input type="button" onclick="liveScreen('*')" id="multiply" value="×">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="button" id="four" value="4">
-                    <input type="button" id="five" value="5">
-                    <input type="button" id="six" value="6">
-                    <input type="button" size="subtraction" value="-">
+                    <input type="button" onclick="liveScreen(4)" id="four" value="4">
+                    <input type="button" onclick="liveScreen(5)" id="five" value="5">
+                    <input type="button" onclick="liveScreen(6)" id="six" value="6">
+                    <input type="button" onclick="liveScreen('-')" size="subtraction" value="-">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="button" id="one" value="1">
-                    <input type="button" id="two" value="2">
-                    <input type="button" id="three" value="3">
-                    <input type="button" id="add" value="+">
+                    <input type="button" onclick="liveScreen(1)" id="one" value="1">
+                    <input type="button" onclick="liveScreen(2)" id="two" value="2">
+                    <input type="button" onclick="liveScreen(3)" id="three" value="3">
+                    <input type="button" onclick="liveScreen('+')" id="add" value="+">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="button" id="zero" value="0">
-                    <input type="button" id="dot" value=".">
-                    <input id="equal" type="button" value="=">
+                    <input type="button" onclick="liveScreen(0)" id="zero" value="0">
+                    <input type="button" onclick="liveScreen('.')" id="dot" value=".">
+                    <input id="equal" onclick="screen.value=eval(screen.value)" type="button" value="=">
                 </div>
             </div>
         </div>

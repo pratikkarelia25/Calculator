@@ -44,6 +44,7 @@ input{
     margin: 3px 3px;
     border-radius: 15px;
     background-color: #EFEFEF;
+    box-shadow: 3px 3px black;
 }
 
 #equal{
@@ -55,9 +56,29 @@ input{
     /* background-color: #EFEFEF; */
     padding: 0 20px;
     font-size: 25px;
+    cursor: default;
+    box-shadow: none;
 }
 
 #equal{
     background-color: rgb(93, 252, 93);
     color: white;
+}
+
+#clear{
+    background-color: red;
+    color: white;
+}
+
+input:hover{
+    height: 70px;
+    width: 70px;
+    border: none;
+    color: black;
+    /* border: 1px solid #053742; */
+    margin: 3px 3px;
+    border-radius: 15px;
+    background-color: rgb(209, 205, 205);
+    transition: 0.25s;
+    
 }
